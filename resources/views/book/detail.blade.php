@@ -19,9 +19,9 @@
 
     <hr>
 
+    @auth   
     <div class="mb-5">
         <h2 class="text-bold">Formulir Peminjaman Buku</h2>
-        @auth   
         <form action="/borrow/{{$book->id}}" method="post">
             @csrf
             <div class="form-group">
@@ -61,8 +61,5 @@
             </tbody>
         </table>
     </div>
-    
-    <hr>
-
     @endauth
 @endsection
